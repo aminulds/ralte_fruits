@@ -7,8 +7,182 @@
     <title>Ralte Fruits Shop</title>
     <!-- bootstrap 5 style -->
     <link rel="stylesheet" href="css/main.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
   </head>
-  <body>
-    <h1>Ralte Fruits</h1>
+  <body class="bg-light">
+    <!-- Top Header -->
+    <section class="top-header bg-primary">
+      <div class="container">
+        <div class="row">
+          <div
+            class="top-header d-flex justify-content-between text-white py-2 py-md-3"
+          >
+            <div class="d-flex align-items-center">
+              <ion-icon name="mail"></ion-icon>
+              <span class="ps-2 d-none d-md-block">
+                info.orgtanicstore@gmail.com
+              </span>
+            </div>
+            <div class="d-flex align-items-center">
+              <ion-icon name="call"></ion-icon>
+              <span class="ps-2 d-none d-md-block"> +15648742 </span>
+            </div>
+            <div class="d-none align-items-center d-lg-block">
+              <ion-icon name="logo-facebook"></ion-icon>
+              <ion-icon class="px-2" name="logo-twitter"></ion-icon>
+              <ion-icon name="logo-google"></ion-icon>
+            </div>
+            <div class="d-flex align-items-center">
+              <img
+                class="img-fluid"
+                src="assests/icons/united-states.png"
+                alt=""
+              />
+              <span class="ps-2 pe-1 d-none d-lg-block">English</span>
+              <ion-icon class="ps-1" name="chevron-down"></ion-icon>
+            </div>
+            <div>
+              <a
+                class="d-flex align-items-center text-decoration-none text-white"
+                href="#"
+              >
+                <ion-icon class="pe-md-2" name="person-circle"></ion-icon>
+                <span class="d-none d-md-block">Login/Register</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Mid Header -->
+    <section class="mid-header bg-light">
+      <div class="container py-4 py-md-5">
+        <div class="row">
+          <div class="d-flex justify-content-between">
+            <div class="col-md-3 col-lg-2">
+              <div>
+                <img
+                  class="d-sm-none"
+                  src="assests/logo/ralte-logo-sm.png"
+                  alt=""
+                />
+                <img
+                  class="d-none d-sm-block"
+                  src="assests/logo/ralte-logo.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="col-md-6 px-2 col-lg-6">
+              <div
+                class="d-flex align-items-center ps-md-3 border border-2 rounded-pill"
+              >
+                <div class="input-group">
+                  <input
+                    type="text"
+                    class="form-control border-0"
+                    placeholder="Search here"
+                    aria-label="Recipient's username"
+                    aria-describedby="basic-addon2"
+                  />
+                  <div class="dropdown pe-md-2 d-none d-md-block text-black">
+                    <button
+                      class="btn text-black dropdown-toggle"
+                      type="button"
+                      id="dropdownMenuButton1"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      All Categories
+                    </button>
+                    <ul
+                      class="dropdown-menu"
+                      aria-labelledby="dropdownMenuButton1"
+                    >
+                      <li><a class="dropdown-item" href="#">Winter</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">Summer</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- <span class="border-start border-2 px-3"></span> -->
+                <span
+                  class="text-primary align-items-center pt-2"
+                  id="basic-addon2"
+                >
+                  <ion-icon class="pe-2 fs-3" name="search"></ion-icon>
+                </span>
+              </div>
+            </div>
+            <div class="col-md-3 col-lg-3 align-items-center">
+              <div class="cart d-flex justify-content-between text-primary">
+                <div class="position-relative d-none d-sm-block">
+                  <ion-icon class="pe-2" name="heart-outline"></ion-icon>
+                  <span
+                    class="position-absolute top-0 start-50 translate-middle-x badge rounded-circle bg-primary"
+                    >7
+                    <span class="visually-hidden"></span>
+                  </span>
+                </div>
+                <div class="position-relative px-sm-2">
+                  <ion-icon name="cart-outline"></ion-icon>
+                  <span
+                    class="position-absolute top-0 start-50 translate-middle-x badge rounded-circle bg-primary"
+                    >9
+                    <span class="visually-hidden"></span>
+                  </span>
+                </div>
+                <span class="d-none d-md-block text-black">My Cart $40.00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Navbar -->
+    <section class="bg-dark">
+      <div class="container">
+        <div class="collapse" id="navbarToggleExternalContent">
+          <div class="bg-dark p-4">
+            <h5 class="text-white h4">Collapsed content</h5>
+            <span class="text-muted">Toggleable via the navbar brand.</span>
+          </div>
+        </div>
+        <nav class="navbar navbar-dark">
+          <div class="">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarToggleExternalContent"
+              aria-controls="navbarToggleExternalContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+        </nav>
+      </div>
+    </section>
+
+    <!-- Ionic Icon -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!-- Bootstrap JS -->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
   </body>
 </html>
