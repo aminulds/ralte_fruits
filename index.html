@@ -116,7 +116,7 @@
                   class="text-primary align-items-center pt-2"
                   id="basic-addon2"
                 >
-                  <ion-icon class="pe-2 fs-3" name="search"></ion-icon>
+                  <ion-icon class="px-2 fs-3" name="search"></ion-icon>
                 </span>
               </div>
             </div>
@@ -148,25 +148,30 @@
     <!-- Navbar -->
     <section class="bg-dark">
       <div class="container">
-        <div class="collapse" id="navbarToggleExternalContent">
-          <div class="bg-dark p-4">
-            <h5 class="text-white h4">Collapsed content</h5>
-            <span class="text-muted">Toggleable via the navbar brand.</span>
-          </div>
-        </div>
-        <nav class="navbar navbar-dark">
-          <div class="">
+        <nav class="navbar navbar-expand-md bg-dark py-0">
+          <div class="container justify-content-end">
             <button
               class="navbar-toggler"
               type="button"
               data-bs-toggle="collapse"
-              data-bs-target="#navbarToggleExternalContent"
-              aria-controls="navbarToggleExternalContent"
+              data-bs-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup"
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
-              <span class="navbar-toggler-icon"></span>
+              <ion-icon class="text-white fs-2 py-1" name="menu"> </ion-icon>
             </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-link py-md-3 px-2 px-md-4 active" href="">Home</a>
+                <a class="nav-link py-md-3 px-2 px-md-4" href="">About</a>
+                <a class="nav-link py-md-3 px-2 px-md-4" href="">Service</a>
+                <a class="nav-link py-md-3 px-2 px-md-4" href="">Pages</a>
+                <a class="nav-link py-md-3 px-2 px-md-4" href="">Shop</a>
+                <a class="nav-link py-md-3 px-2 px-md-4" href="">Blog</a>
+                <a class="nav-link py-md-3 px-2 px-md-4" href="">Contact</a>
+              </div>
+            </div>
           </div>
         </nav>
       </div>

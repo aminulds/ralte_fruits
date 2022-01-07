@@ -20,7 +20,21 @@ $black: rgb(83, 80, 80);
       font-size: 40px;
     }
 
-    
+  }
+}
 
+// Navbar
+.navbar-nav{
+
+  a{
+    color: $light;
+
+    &.active{
+      background-color: $primary;
+    }
+    &:hover{
+      @extend .active;
+      color: $light;
+    }
   }
 }
