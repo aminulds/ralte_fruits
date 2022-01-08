@@ -1,0 +1,61 @@
+$light: #ffffff;
+$dark: #151932;
+$primary: #81ac27;
+$secondary: #e9ecff;
+$black: rgb(83, 80, 80);
+$info: #f2f2f2;
+
+
+@import '../node_modules/bootstrap//scss/bootstrap.scss';
+
+
+// Mid Header
+.mid-header{
+
+  .cart{
+
+    span{
+      margin-left: 12px;
+    }
+    ion-icon{
+      font-size: 40px;
+    }
+
+  }
+}
+
+// Navbar
+.navbar-nav{
+
+  a{
+    color: $light;
+
+    &.active{
+      background-color: $primary;
+    }
+    &:hover{
+      @extend .active;
+      color: $light;
+    }
+  }
+}
+
+// Intro
+.intro{
+  background-image: url('../assests/images/banner-bg.jpg');
+  background-position: center;
+  background-size: cover;
+  height: 600px;
+
+  .offer{
+    height: 100px;
+    width: 100px;
+  }
+
+}
+
+// deals
+.deal{
+
+  margin-top: -60px;
+}
