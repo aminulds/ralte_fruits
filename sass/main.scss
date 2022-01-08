@@ -1,7 +1,7 @@
 $light: #ffffff;
 $dark: #151932;
 $primary: #81ac27;
-$secondary: #f2f2f2;
+$secondary: #e9ecff;
 $black: rgb(83, 80, 80);
 
 
@@ -37,4 +37,19 @@ $black: rgb(83, 80, 80);
       color: $light;
     }
   }
+}
+
+// Intro
+.intro{
+  background-image: url('../assests/images/banner-bg.jpg');
+  background-position: center;
+  background-size: cover;
+  height: 600px;
+
+  .offer{
+    height: 100px;
+    width: 100px;
+  }
+
+
 }
