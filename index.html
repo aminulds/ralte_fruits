@@ -18,7 +18,7 @@
       rel="stylesheet"
     />
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/main.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
   </head>
   <body class="bg-white">
     <!-- Top Header -->
@@ -29,32 +29,46 @@
             class="top-header d-flex justify-content-between text-white py-2 py-md-3"
           >
             <div class="d-flex align-items-center">
-              <ion-icon name="mail"></ion-icon>
+              <a class="text-white" href="mailto:someone@example.com"
+                ><ion-icon name="mail"></ion-icon
+              ></a>
+
               <span class="ps-2 d-none d-md-block">
                 info.orgtanicstore@gmail.com
               </span>
             </div>
             <div class="d-flex align-items-center">
-              <ion-icon name="call"></ion-icon>
+              <a class="text-white" href="callto:+15648742"
+                ><ion-icon name="call"></ion-icon
+              ></a>
+
               <span class="ps-2 d-none d-md-block"> +15648742 </span>
             </div>
-            <div class="d-none align-items-center d-lg-block">
+            <div class="d-none d-lg-block pt-lg-2">
               <ion-icon name="logo-facebook"></ion-icon>
               <ion-icon class="px-2" name="logo-twitter"></ion-icon>
               <ion-icon name="logo-google"></ion-icon>
             </div>
             <div class="d-flex align-items-center">
               <img
-                class="img-fluid"
+                class="img-fluid d-none d-md-block"
                 src="assests/icons/united-states.png"
                 alt=""
               />
-              <span class="ps-2 pe-1 d-none d-lg-block">English</span>
-              <ion-icon class="ps-1" name="chevron-down"></ion-icon>
+              <select
+                class="form-select bg-primary text-white btn-outline-primary"
+                aria-label="Default select example"
+              >
+                <option selected>English</option>
+                <option value="1">Bengaly</option>
+                <option value="2">China</option>
+                <option value="3">Hindi</option>
+              </select>
             </div>
+
             <div>
               <a
-                class="d-flex align-items-center text-decoration-none text-white"
+                class="d-flex pt-1 align-items-center text-decoration-none text-white"
                 href="#"
               >
                 <ion-icon class="pe-md-2" name="person-circle"></ion-icon>
@@ -78,7 +92,7 @@
                   alt=""
                 />
                 <img
-                  class="d-none d-sm-block"
+                  class="d-none d-md-block"
                   src="assests/logo/ralte-logo.png"
                   alt=""
                 />
@@ -86,7 +100,7 @@
             </div>
             <div class="col-md-6 px-2 col-lg-6">
               <div
-                class="d-flex align-items-center ps-md-3 border border-2 rounded-pill"
+                class="d-flex align-items-center ps-2 border border-2 rounded-pill"
               >
                 <div class="input-group">
                   <input
@@ -119,10 +133,10 @@
                 </div>
                 <!-- <span class="border-start border-2 px-3"></span> -->
                 <span
-                  class="text-primary align-items-center pt-2"
+                  class="btn-search text-primary align-items-center pt-2"
                   id="basic-addon2"
                 >
-                  <ion-icon class="px-2 fs-3" name="search"></ion-icon>
+                  <ion-icon class="px-3 fs-3" name="search"></ion-icon>
                 </span>
               </div>
             </div>
@@ -165,10 +179,14 @@
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
-              <ion-icon class="text-white fs-2 py-1" name="menu"> </ion-icon>
+              <ion-icon
+                class="navbar-toggler-icon text-white fs-2 py-1"
+                name="menu"
+              >
+              </ion-icon>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <div class="navbar-nav">
+              <div class="navbar-nav text-center">
                 <a class="nav-link py-md-3 pe-2 ps-0 px-md-4 active" href=""
                   >Home</a
                 >
@@ -307,7 +325,7 @@
                 class="d-flex align-items-center justify-content-center justify-content-md-start pt-3"
               >
                 <img
-                  class="img-fluid rounded-circle w-25"
+                  class="profile-img img-fluid rounded-circle"
                   src="assests/images/person.jpg"
                   alt=""
                 />
@@ -449,6 +467,7 @@
             </div>
           </div>
         </div>
+
         <div class="pt-4 d-flex justify-content-center">
           <button class="btn btn-primary text-white px-4 rounded-pill">
             Show More
@@ -456,7 +475,7 @@
         </div>
       </div>
     </section>
-    <!-- Best Collection -->
+    <!-- Natural Product -->
     <section class="bg-secondary py-4 my-5">
       <div class="container">
         <div class="row align-items-center text-center text-md-start">
@@ -474,13 +493,180 @@
               </button>
             </div>
           </div>
-          <div class="col-md-6">
+          <div class="col-md-6 d-flex">
             <div class="text-md-end pt-4">
               <img
                 class="img-fluid w-50"
                 src="assests/images/grocery-bag.png"
                 alt=""
               />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Most View Products -->
+    <section class="most-view-products">
+      <div class="container">
+        <!-- Trending Product -->
+        <div class="text-center">
+          <h6 class="text-black">Recently added our store</h6>
+          <h1 class="fw-bold">Most View Products</h1>
+        </div>
+        <div
+          class="row py-4 row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4"
+        >
+          <!-- products -->
+          <div class="col">
+            <div class="card text-center">
+              <div class="bg-info">
+                <img
+                  class="card-img-top img-fluid p-4 p-md-4"
+                  src="assests/images/products/9.png"
+                  alt="..."
+                />
+              </div>
+              <div class="card-footer bg-white">
+                <h6>Etim Gravida</h6>
+                <span class="text-black">$14.00 - <s>$9.99</s></span>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card text-center">
+              <div class="bg-info">
+                <img
+                  class="card-img-top img-fluid p-4 p-md-4"
+                  src="assests/images/products/10.png"
+                  alt="..."
+                />
+              </div>
+              <div class="card-footer bg-white">
+                <h6>Etim Gravida</h6>
+                <span class="text-black">$14.00 - <s>$9.99</s></span>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card text-center">
+              <div class="bg-info">
+                <img
+                  class="card-img-top img-fluid p-4 p-md-4"
+                  src="assests/images/products/11.png"
+                  alt="..."
+                />
+              </div>
+              <div class="card-footer bg-white">
+                <h6>Etim Gravida</h6>
+                <span class="text-black">$14.00 - <s>$9.99</s></span>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card text-center">
+              <div class="bg-info">
+                <img
+                  class="card-img-top img-fluid p-4 p-md-4"
+                  src="assests/images/products/12.png"
+                  alt="..."
+                />
+              </div>
+              <div class="card-footer bg-white">
+                <h6>Etim Gravida</h6>
+                <span class="text-black">$14.00 - <s>$9.99</s></span>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card text-center">
+              <div class="bg-info">
+                <img
+                  class="card-img-top img-fluid p-4 p-md-4"
+                  src="assests/images/products/13.png"
+                  alt="..."
+                />
+              </div>
+              <div class="card-footer bg-white">
+                <h6>Etim Gravida</h6>
+                <span class="text-black">$14.00 - <s>$9.99</s></span>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card text-center">
+              <div class="bg-info">
+                <img
+                  class="card-img-top img-fluid p-4 p-md-4"
+                  src="assests/images/products/14.png"
+                  alt="..."
+                />
+              </div>
+              <div class="card-footer bg-white">
+                <h6>Etim Gravida</h6>
+                <span class="text-black">$14.00 - <s>$9.99</s></span>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card text-center">
+              <div class="bg-info">
+                <img
+                  class="card-img-top img-fluid p-4 p-md-4"
+                  src="assests/images/products/15.png"
+                  alt="..."
+                />
+              </div>
+              <div class="card-footer bg-white">
+                <h6>Etim Gravida</h6>
+                <span class="text-black">$14.00 - <s>$9.99</s></span>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card text-center">
+              <div class="bg-info">
+                <img
+                  class="card-img-top img-fluid p-4 p-md-4"
+                  src="assests/images/products/16.png"
+                  alt="..."
+                />
+              </div>
+              <div class="card-footer bg-white">
+                <h6>Etim Gravida</h6>
+                <span class="text-black">$14.00 - <s>$9.99</s></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Discount -->
+        <div class="row py-3 py-md-5 g-4">
+          <div class="col-md-6">
+            <div class="h-100 bg-dark position-relative">
+              <img
+                class="discount-bg h-100"
+                src="assests/images/banner-biodegradable.png"
+                alt=""
+              />
+              <div class="text-white py-5 text-center position-relative">
+                <h6>Pick Your Items</h6>
+                <h2>Up to 25% Off Order Now</h2>
+                <a class="text-white fw-bold" href="#">Shop Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="h-100 bg-dark position-relative">
+              <img
+                class="discount-bg h-100"
+                src="assests/images/banner-blud-suger.png"
+                alt=""
+              />
+              <div class="text-white py-5 text-center position-relative">
+                <h6>Pick Your Items</h6>
+                <h2>Up to 25% Off Order Now</h2>
+                <a class="text-white fw-bold" href="#">Shop Now</a>
+              </div>
             </div>
           </div>
         </div>
