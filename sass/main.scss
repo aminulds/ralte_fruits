@@ -10,6 +10,12 @@ $form-select-indicator-color: white;
 
 @import "../node_modules/bootstrap//scss/bootstrap.scss";
 
+
+// Top Header
+.top-header{
+  ion-icon{cursor: pointer;}
+
+}
 // Mid Header
 .mid-header {
   .btn-search {
@@ -72,7 +78,9 @@ $form-select-indicator-color: white;
 // Profile
 .profile-img {
   width: 10%;
-  border: 4px solid rgb(177, 173, 173);
+  border: 5px solid white;
+  outline: 1px solid $primary;
+ 
 }
 
 // Discount
