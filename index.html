@@ -26,7 +26,7 @@
       <div class="container">
         <div class="row">
           <div
-            class="top-header d-flex justify-content-between text-white py-2 py-md-3"
+            class="top-header d-flex justify-content-between align-items-center text-white py-2 py-md-3"
           >
             <div class="d-flex align-items-center">
               <a class="text-white" href="mailto:someone@example.com"
@@ -50,13 +50,14 @@
               <ion-icon name="logo-google"></ion-icon>
             </div>
             <div class="d-flex align-items-center">
-              <img
+              <!-- <img
                 class="img-fluid d-none d-md-block"
                 src="assests/icons/united-states.png"
                 alt=""
-              />
+              /> -->
+
               <select
-                class="form-select bg-primary text-white btn-outline-primary"
+                class="form-select bg-primary px-4 text-white btn-outline-primary"
                 aria-label="Default select example"
               >
                 <option selected>English</option>
@@ -66,12 +67,12 @@
               </select>
             </div>
 
-            <div>
-              <a
-                class="d-flex pt-1 align-items-center text-decoration-none text-white"
-                href="#"
-              >
-                <ion-icon class="pe-md-2" name="person-circle"></ion-icon>
+            <div class="align-items-center">
+              <a class="d-flex text-decoration-none text-white" href="#">
+                <ion-icon
+                  class="pe-md-2 d-md-none"
+                  name="person-circle"
+                ></ion-icon>
                 <span class="d-none d-md-block">Login/Register</span>
               </a>
             </div>
@@ -83,11 +84,11 @@
     <section class="mid-header bg-light">
       <div class="container py-4 py-md-5">
         <div class="row">
-          <div class="d-flex justify-content-between">
+          <div class="d-flex justify-content-between align-items-center">
             <div class="col-md-3 col-lg-2">
-              <div>
+              <a href="#">
                 <img
-                  class="d-sm-none"
+                  class="d-md-none"
                   src="assests/logo/ralte-logo-sm.png"
                   alt=""
                 />
@@ -96,7 +97,7 @@
                   src="assests/logo/ralte-logo.png"
                   alt=""
                 />
-              </div>
+              </a>
             </div>
             <div class="col-md-6 px-2 col-lg-6">
               <div
@@ -106,19 +107,19 @@
                   <input
                     type="text"
                     class="form-control border-0"
-                    placeholder="Search here"
+                    placeholder="Search"
                     aria-label="Recipient's username"
                     aria-describedby="basic-addon2"
                   />
-                  <div class="dropdown pe-md-2 d-none d-md-block text-black">
+                  <div class="dropdown pe-md-2 text-black">
                     <button
-                      class="btn text-black dropdown-toggle"
+                      class="btn text-black dropdown-toggle d-sm-flex align-items-center"
                       type="button"
                       id="dropdownMenuButton1"
                       data-bs-toggle="dropdown"
                       aria-expanded="false"
                     >
-                      All Categories
+                      <span class="d-none d-sm-block">All Categories</span>
                     </button>
                     <ul
                       class="dropdown-menu"
@@ -140,10 +141,12 @@
                 </span>
               </div>
             </div>
-            <div class="col-md-3 col-lg-3 align-items-center">
-              <div class="cart d-flex justify-content-between text-primary">
+            <div class="col-md-3">
+              <div
+                class="cart d-flex justify-content-between align-items-center text-primary"
+              >
                 <div class="position-relative d-none d-sm-block">
-                  <ion-icon class="pe-2" name="heart-outline"></ion-icon>
+                  <ion-icon class="" name="heart-outline"></ion-icon>
                   <span
                     class="position-absolute top-0 start-50 translate-middle-x badge rounded-circle bg-primary"
                     >7
@@ -171,7 +174,7 @@
         <nav class="navbar navbar-expand-md bg-dark py-0 ps-0">
           <div class="justify-content-end">
             <button
-              class="navbar-toggler"
+              class="navbar-toggler ps-0"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#navbarNavAltMarkup"
@@ -204,11 +207,11 @@
     </section>
     <!-- Intro -->
     <section class="intro">
-      <div class="container py-2 py-md-5">
-        <div class="row py-4">
+      <div class="container py-4 py-md-5">
+        <div class="row pt-lg-4">
           <div class="col-md-6 py-3 py-md-5">
             <div class="bg-opacity-25 pb-3 ps-md-3 bg-black text-white">
-              <h6 class="py-3 text-center text-md-start">
+              <h6 class="py-3 text-center text-md-start text-light">
                 Take Natural Taste From Our Shop
               </h6>
               <h1 class="fw-bold text-center text-md-start">
@@ -219,25 +222,23 @@
                 Deserunt, porro odio? Excepturi deleniti cupiditate
                 reprehenderit, iusto ipsum magni!
               </p>
-              <div
-                class="d-flex justify-content-around justify-content-md-start"
-              >
+              <div class="d-flex justify-content-around">
                 <button class="btn btn-primary rounded-pill text-white px-3">
                   Add to Cart
                 </button>
-                <button
-                  class="btn text-white btn-outline-light rounded-pill ms-3"
-                >
+                <button class="btn btn-primary rounded-pill text-white px-3">
                   Shop Now
                 </button>
               </div>
             </div>
           </div>
-          <div class="col-md-6 pt-4 pt-md-5 d-flex justify-content-center">
+          <div
+            class="col-md-6 pt-3 pt-md-5 d-grid align-items-center justify-content-center"
+          >
             <div
               class="offer ms-md-5 rounded-circle bg-white text-primary text-center d-flex align-items-center justify-content-center fw-bolder"
             >
-              <span>20%Off</span>
+              <span>20% Off</span>
             </div>
           </div>
         </div>
@@ -249,7 +250,7 @@
         <div class="row deal py-4 pt-md-0 gy-3 mt-n4">
           <div class="col-md-6">
             <div
-              class="d-md-flex py-3 py-md-0 text-center text-md-start align-items-center justify-content-between bg-secondary"
+              class="d-md-flex py-4 py-md-0 text-center text-md-start align-items-center justify-content-between bg-secondary"
             >
               <div class="pb-3 pt-md- ps-md-3">
                 <p class="fw-bolder text-black">Starting At :$19.00</p>
@@ -258,7 +259,7 @@
               </div>
               <img
                 class="img-fluid w-50"
-                src="assests/images/fruits-vegetables.png"
+                src="assests/images/fruit.png"
                 alt=""
               />
             </div>
@@ -273,14 +274,14 @@
               </div>
               <img
                 class="img-fluid w-50"
-                src="assests/images/pinneaple.jpg"
+                src="assests/images/pinneaple.png"
                 alt=""
               />
             </div>
           </div>
         </div>
         <!-- last intro -->
-        <div class="row py-4 py-md-5 last-intro">
+        <div class="row border-bottom-1 border-bottom py-2 py-md-5 last-intro">
           <div class="col-md-6 pb-4 d-md-flex align-items-center">
             <div class="text-center">
               <img
@@ -293,10 +294,8 @@
           <div class="col-md-6">
             <div>
               <div class="text-center text-md-start">
+                <h2 class="fw-bolder py-2">A shop for good people</h2>
                 <h6 class="fw-bolder text-primary">A Few Words About Us</h6>
-                <h2 class="fw-bolder py-2">
-                  A shop for good people by good people
-                </h2>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
                   ipsum dolore quibusdam placeat molestias id vitae pariatur
@@ -338,9 +337,9 @@
           </div>
         </div>
         <!-- Trending Product -->
-        <div class="text-center pt-4 pt-sm-5">
-          <h6 class="text-black">Recently added our store</h6>
+        <div class="text-center pt-5">
           <h1 class="fw-bold">Trending Products</h1>
+          <h6 class="text-primary pt-2">Recently added our store</h6>
         </div>
         <div
           class="row pt-4 row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4"
@@ -476,13 +475,13 @@
       </div>
     </section>
     <!-- Natural Product -->
-    <section class="bg-secondary py-4 my-5">
+    <section class="bg-secondary py-3 my-5">
       <div class="container">
         <div class="row align-items-center text-center text-md-start">
           <div class="col-md-6">
             <div class="">
-              <h6 class="text-primary">Gnash Best Collection 2022</h6>
               <h2 class="py-2">Organic Natural Products</h2>
+              <h6 class="text-primary pb-2">Gnash Best Collection 2022</h6>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
                 incidunt eum voluptate eius facere eaque aut assumenda aliquid
@@ -507,11 +506,11 @@
     </section>
 
     <!-- Most View Products -->
-    <section class="most-view-products">
+    <section class="most-view-products py-3 py-md-4 mb-sm-4">
       <div class="container">
         <div class="text-center">
-          <h6 class="text-black">Recently added our store</h6>
           <h1 class="fw-bold">Most View Products</h1>
+          <h6 class="text-primary pt-2">Recently added our store</h6>
         </div>
         <div
           class="row py-4 row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4"
@@ -670,104 +669,334 @@
           </div>
         </div>
         <!-- Feature Product -->
-        <div class="row g-4">
+        <div class="row py-4 g-4">
+          <div class="d-md-flex justify-content-between">
+            <h2 class="text-center">Feature Products</h2>
+            <!-- Category Menu -->
+            <div
+              class="d-flex d-none d-sm-flex justify-content-center category-menu"
+            >
+              <li
+                class="nav-link active text-decoration-none"
+                id="vegetables"
+                onclick="changeCatData('vegetables')"
+              >
+                Vegetables
+              </li>
+              <li
+                class="nav-link text-decoration-none"
+                id="fishMeat"
+                onclick="changeCatData('fishMeat')"
+              >
+                Fish & Meat
+              </li>
+              <li
+                class="nav-link text-decoration-none"
+                id="driFood"
+                onclick="changeCatData('driFood')"
+              >
+                Dried Food
+              </li>
+
+              <li
+                class="nav-link text-decoration-none"
+                id="drink"
+                onclick="changeCatData('drink')"
+              >
+                Drink
+              </li>
+            </div>
+          </div>
           <div class="col-md-6">
-            <h2 class="pb-3">Feature Products</h2>
-            <div class="bg-info border">
-              <div class="ps-4 pt-3">
+            <div
+              class="bg-info d-grid align-items-md-center h-100 py-3 py-md-0 border"
+            >
+              <div class="ps-4">
                 <span class="text-black fs-6">Offer Sale</span>
                 <h5>Leatherette Office</h5>
                 <span>$645.00 - <s>$755.99</s></span>
               </div>
-              <div class="text-center py-md-5">
+              <div class="text-center">
                 <img
-                  class="img-fluid py-md-5"
-                  src="assests/images/feature-product/feature1.png"
+                  class="img-fluid px-3"
+                  id="featureImg"
+                  src="assests/images/feature-product/vegetables/vegetables.png"
                   alt=""
                 />
               </div>
-              <a class="text-dark d-block pb-4 pe-4 text-end" href="#"
+              <a class="text-dark d-block pe-4 text-end" href="#"
                 >Discover Now</a
               >
             </div>
           </div>
           <!--  -->
+
           <div class="col-md-6">
-            <!-- Category Menu -->
-            <div class="d-flex justify-content-center pb-3">
-              <a class="nav-link text-decoration-none active" href="#"
-                >Fish & Meat</a
-              >
-              <a class="nav-link text-decoration-none text-black" href="#"
-                >Dried Food</a
-              >
-              <a class="nav-link text-decoration-none text-black" href="#"
-                >Vegetables</a
-              >
-              <a class="nav-link text-decoration-none text-black" href="#"
-                >Drink</a
-              >
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+              <div class="col">
+                <div class="card text-center">
+                  <div class="bg-info pb-2">
+                    <img
+                      class="card-img-top img-fluid p-3"
+                      id="catImg1"
+                      src="assests/images/feature-product/vegetables/1.png"
+                      alt="..."
+                    />
+                    <div
+                      class="bg-light mx-2 p-2 rounded-1 d-flex justify-content-around align-items-center"
+                    >
+                      <div>
+                        <span class="fw-bolder">23</span> <br />
+                        <small class="">DAY</small>
+                      </div>
+                      :
+                      <div>
+                        <span class="fw-bolder">15</span> <br />
+                        <small class="">HOUR</small>
+                      </div>
+                      :
+                      <div>
+                        <span class="fw-bolder">45</span> <br />
+                        <small class="">MIN</small>
+                      </div>
+                      :
+                      <div>
+                        <span class="fw-bolder">58</span> <br />
+                        <small class="">SEC</small>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="text-center pt-3">
+                    <h6 class="">Small Form Barstool</h6>
+                    <ion-icon class="text-warning" name="star"></ion-icon>
+                    <ion-icon class="text-warning" name="star"></ion-icon>
+                    <ion-icon class="text-warning" name="star"></ion-icon>
+                    <ion-icon class="text-warning" name="star"></ion-icon>
+                    <ion-icon class="text-warning" name="star"></ion-icon>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card text-center">
+                  <div class="bg-info py-5">
+                    <img
+                      class="card-img-top img-fluid px-3 py-1"
+                      id="catImg2"
+                      src="assests/images/feature-product/vegetables/2.png"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="text-center pt-3">
+                    <h6>Medusa Side Table</h6>
+                    <span>$36.00</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card text-center">
+                  <div class="bg-info">
+                    <img
+                      class="card-img-top img-fluid p-3"
+                      id="catImg3"
+                      src="assests/images/feature-product/vegetables/3.png"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="text-center py-3">
+                    <h6>Medusa Side Table</h6>
+                    <span>$36.00</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card text-center">
+                  <div class="bg-info">
+                    <img
+                      class="card-img-top img-fluid p-3"
+                      id="catImg4"
+                      src="assests/images/feature-product/vegetables/4.png"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="text-center py-3">
+                    <h6>Medusa Side Table</h6>
+                    <span>$36.00</span>
+                  </div>
+                </div>
+              </div>
+              <!--  -->
             </div>
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 g-4">
-              <div class="col">
-                <div class="card text-center">
-                  <div class="bg-info">
-                    <img
-                      class="card-img-top img-fluid p-4 p-md-4"
-                      src="assests/images/feature-product/1.png"
-                      alt="..."
-                    />
-                  </div>
-                  <div class="card-footer bg-white">
-                    <h6>Etim Gravida</h6>
-                    <span class="text-black">$14.00 - <s>$9.99</s></span>
-                  </div>
-                </div>
+          </div>
+          <!--  -->
+        </div>
+        <!--  -->
+      </div>
+    </section>
+
+    <!-- Caresole -->
+    <section class="bg-secondary d-none d-sm-block py-2 py-md-4">
+      <div class="container">
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="text-center py-5">
+                <img
+                  class="img-fluid profile-img rounded-circle"
+                  src="assests/images/carousel/profile-1.png"
+                  alt=""
+                />
+                <h5 class="pt-2">Any Merry</h5>
+                <span class="text-primary">Nevada, USA</span>
+                <p class="pt-2">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae
+                  asperiores officiis inventore <br />
+                  magnam sapiente recusandae debitis provident fugiat
+                  necessitatibus maxime.
+                </p>
               </div>
-              <div class="col">
-                <div class="card text-center">
-                  <div class="bg-info">
-                    <img
-                      class="card-img-top img-fluid p-4 p-md-4"
-                      src="assests/images/feature-product/2.png"
-                      alt="..."
-                    />
-                  </div>
-                  <div class="card-footer bg-white">
-                    <h6>Etim Gravida</h6>
-                    <span class="text-black">$14.00 - <s>$9.99</s></span>
-                  </div>
-                </div>
+            </div>
+            <div class="carousel-item">
+              <div class="text-center py-5">
+                <img
+                  class="img-fluid profile-img rounded-circle"
+                  src="assests/images/carousel/profile-2.png"
+                  alt=""
+                />
+                <h5 class="pt-2">John Smith</h5>
+                <span class="text-primary">Nevada, USA</span>
+                <p class="pt-2">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae
+                  asperiores officiis inventore <br />
+                  magnam sapiente recusandae debitis provident fugiat
+                  necessitatibus maxime.
+                </p>
               </div>
-              <div class="col">
-                <div class="card text-center">
-                  <div class="bg-info">
-                    <img
-                      class="card-img-top img-fluid p-4 p-md-4"
-                      src="assests/images/feature-product/3.png"
-                      alt="..."
-                    />
-                  </div>
-                  <div class="card-footer bg-white">
-                    <h6>Etim Gravida</h6>
-                    <span class="text-black">$14.00 - <s>$9.99</s></span>
-                  </div>
-                </div>
+            </div>
+            <div class="carousel-item">
+              <div class="text-center py-5">
+                <img
+                  class="img-fluid profile-img rounded-circle"
+                  src="assests/images/carousel/profile-3.png"
+                  alt=""
+                />
+                <h5 class="pt-2">Lerry Pot</h5>
+                <span class="text-primary">Nevada, USA</span>
+                <p class="pt-2">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae
+                  asperiores officiis inventore <br />
+                  magnam sapiente recusandae debitis provident fugiat
+                  necessitatibus maxime.
+                </p>
               </div>
-              <div class="col">
-                <div class="card text-center">
-                  <div class="bg-info">
-                    <img
-                      class="card-img-top img-fluid p-4 p-md-4"
-                      src="assests/images/feature-product/4.png"
-                      alt="..."
-                    />
-                  </div>
-                  <div class="card-footer bg-white">
-                    <h6>Etim Gravida</h6>
-                    <span class="text-black">$14.00 - <s>$9.99</s></span>
-                  </div>
-                </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog -->
+    <section class="blog py-4 py-md-5">
+      <div class="container">
+        <h2 class="text-center">From Our Blog</h2>
+        <div class="row g-4 py-4 row-cols-1 row-cols-sm-2 row-cols-md-4">
+          <div class="col">
+            <div class="h-100 bg-dark position-relative">
+              <img
+                class="discount-bg h-100"
+                src="assests/images/blog/1.png"
+                alt=""
+              />
+              <div class="text-white py-5 text-center position-relative">
+                <h4>Never miss any great</h4>
+                <a class="text-white" href="#">Tips & Tricks</a>
+                <span>May 30, 2021</span>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="h-100 bg-dark position-relative">
+              <img
+                class="discount-bg h-100"
+                src="assests/images/blog/2.png"
+                alt=""
+              />
+              <div class="text-white py-5 text-center position-relative">
+                <h4>Blockchain and Smart</h4>
+                <a class="text-white" href="#">Tips & Tricks</a>
+                <span>May 30, 2021</span>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="h-100 bg-dark position-relative">
+              <img
+                class="discount-bg h-100"
+                src="assests/images/blog/3.png"
+                alt=""
+              />
+              <div class="text-white py-5 text-center position-relative">
+                <h4>My Classic Music</h4>
+                <a class="text-white" href="#">Tips & Tricks</a>
+                <span>May 30, 2021</span>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="h-100 bg-dark position-relative">
+              <img
+                class="discount-bg h-100"
+                src="assests/images/blog/1.png"
+                alt=""
+              />
+              <div class="text-white py-5 text-center position-relative">
+                <h4>My Classic Music</h4>
+                <a class="text-white" href="#">Tips & Tricks</a>
+                <span>May 30, 2021</span>
               </div>
             </div>
           </div>
@@ -775,6 +1004,174 @@
         </div>
       </div>
     </section>
+
+    <!-- Footer -->
+    <footer class="position-relative bg-dark">
+      <img
+        class="position-absolute opacity-25"
+        src="assests/images/footer-bg.png"
+        alt=""
+      />
+      <div class="container position-relative">
+        <div
+          class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3 text-white py-3 py-md-5"
+        >
+          <div class="col d-grid">
+            <div class="d-grid ps-2">
+              <h5 class="fw-bold">My Account</h5>
+              <a class="nav-item text-white text-decoration-none" href=""
+                >My Account</a
+              >
+              <a class="nav-item text-white text-decoration-none" href=""
+                >Order History</a
+              >
+              <a class="nav-item text-white text-decoration-none" href=""
+                >Wish List</a
+              >
+              <a class="nav-item text-white text-decoration-none" href=""
+                >Newsletter
+              </a>
+              <a class="nav-item text-white text-decoration-none" href=""
+                >Order History</a
+              >
+              <a class="nav-item text-white text-decoration-none" href=""
+                >International Order</a
+              >
+            </div>
+          </div>
+          <div class="col d-grid">
+            <div class="d-grid ps-2">
+              <h5 class="fw-bold">Company Details</h5>
+              <address>
+                <span class="text-primary fw-bold">Address:</span> <br />
+                21 Newstreet, Chaitan <br />
+                town, China, 109-75 <br />
+                <span class="text-primary fw-bold">Contact:</span> <br />
+                <a
+                  class="nav-item text-white text-decoration-none"
+                  href="callto:+700800-50-800"
+                  >+700800-50-800</a
+                ><br />
+                <a
+                  class="nav-item text-white text-decoration-none"
+                  href="mailto:yourmail@gmail.com"
+                  >yourmail@gmail.com</a
+                >
+              </address>
+            </div>
+          </div>
+          <div class="col d-none d-sm-grid">
+            <h5 class="pb-2 fw-bold">Information</h5>
+            <a class="nav-item text-white text-decoration-none" href=""
+              >My Account</a
+            >
+            <a class="nav-item text-white text-decoration-none" href=""
+              >Order History</a
+            >
+            <a class="nav-item text-white text-decoration-none" href=""
+              >Wish List</a
+            >
+            <a class="nav-item text-white text-decoration-none" href=""
+              >Newsletter
+            </a>
+            <a class="nav-item text-white text-decoration-none" href=""
+              >Order History</a
+            >
+            <a class="nav-item text-white text-decoration-none" href=""
+              >International Order</a
+            >
+          </div>
+          <div class="col d-none d-sm-grid">
+            <h5 class="pb-2 fw-bold">Quick Links</h5>
+            <a class="nav-item text-white text-decoration-none" href=""
+              >My Account</a
+            >
+            <a class="nav-item text-white text-decoration-none" href=""
+              >Order History</a
+            >
+            <a class="nav-item text-white text-decoration-none" href=""
+              >Wish List</a
+            >
+            <a class="nav-item text-white text-decoration-none" href=""
+              >Newsletter
+            </a>
+            <a class="nav-item text-white text-decoration-none" href=""
+              >Order History</a
+            >
+            <a class="nav-item text-white text-decoration-none" href=""
+              >International Order</a
+            >
+          </div>
+        </div>
+        <!-- Footer input -->
+        <div class="row bg-primary pt-3 py-md-4">
+          <div class="">
+            <div
+              class="d-sm-flex align-items-sm-center justify-content-sm-between"
+            >
+              <a href="#">
+                <img
+                  class="img-fluid d-none d-md-block h-50"
+                  src="assests/logo/ralte-logo2.png"
+                  alt=""
+                />
+                <img
+                  class="img-fluid d-none d-sm-block d-md-none h-50"
+                  src="assests/logo/ralte-logo-sm2.png"
+                  alt=""
+                />
+              </a>
+
+              <div class="d-grid justify-content-center d-lg-flex text-white">
+                <div class="input-group pb-2 pe-lg-5">
+                  <input
+                    type="text"
+                    class="form-control border-end-0 bg-primary text-white"
+                    placeholder="Your Email Address"
+                    aria-label="Recipient's username"
+                    aria-describedby="basic-addon2"
+                  />
+                  <span class="input-group-text bg-primary">
+                    <ion-icon
+                      class="btn text-white"
+                      name="paper-plane-outline"
+                    ></ion-icon>
+                  </span>
+                </div>
+                <img
+                  class="img-fluid ps-lg-4"
+                  src="assests/logo/payment-method.png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Copyritht -->
+        <div class="row py-3">
+          <div class="d-flex justify-content-between text-white px-0">
+            <p>Copyright © Refresh. All Right Reserved.</p>
+            <div class="justify-content-end">
+              <a href="" class="nav-item text-white text-decoration-none px-2"
+                >Home</a
+              >
+              <a href="" class="nav-item text-white text-decoration-none px-2"
+                >Cases</a
+              >
+              <a href="" class="nav-item text-white text-decoration-none px-2"
+                >About</a
+              >
+              <a href="" class="nav-item text-white text-decoration-none px-2"
+                >Legal</a
+              >
+              <a href="" class="nav-item text-white text-decoration-none"
+                >Privacy & Policy</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <!-- Ionic Icon -->
     <script
@@ -788,5 +1185,7 @@
 
     <!-- Bootstrap JS -->
     <script src="js/bootstrap.bundle.js"></script>
+    <!-- Custom JS -->
+    <script src="js/custom.js"></script>
   </body>
 </html>
